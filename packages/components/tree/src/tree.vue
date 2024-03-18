@@ -166,14 +166,14 @@ export default defineComponent({
         lazy: props.lazy,
         props: props.props,
         load: props.load,
-        currentNodeKey: props.currentNodeKey,
-        checkStrictly: props.checkStrictly,
+        currentNodeKey: props.currentNodeKey, // 当前选中的节点
+        checkStrictly: props.checkStrictly, // 在显示复选框的情况下，是否严格的遵循父子不互相关联的做法，默认为 false
         checkDescendants: props.checkDescendants,
         defaultCheckedKeys: props.defaultCheckedKeys,
         defaultExpandedKeys: props.defaultExpandedKeys,
         autoExpandParent: props.autoExpandParent,
         defaultExpandAll: props.defaultExpandAll,
-        filterNodeMethod: props.filterNodeMethod,
+        filterNodeMethod: props.filterNodeMethod, // 对树节点进行筛选时执行的方法， 返回 false 则表示这个节点会被隐藏
       })
     )
 

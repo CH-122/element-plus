@@ -136,7 +136,7 @@ module.exports = defineConfig({
   rules: {
     // js/ts
     camelcase: ['error', { properties: 'never' }],
-    'no-console': ['warn', { allow: ['error'] }],
+    'no-console': ['off', { allow: ['error'] }],
     'no-debugger': 'warn',
     'no-constant-condition': ['error', { checkLoops: false }],
     'no-restricted-syntax': ['error', 'LabeledStatement', 'WithStatement'],
@@ -166,7 +166,7 @@ module.exports = defineConfig({
     // best-practice
     'array-callback-return': 'error',
     'block-scoped-var': 'error',
-    'no-alert': 'warn',
+    'no-alert': 'off',
     'no-case-declarations': 'error',
     'no-multi-str': 'error',
     'no-with': 'error',

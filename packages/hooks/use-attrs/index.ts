@@ -5,7 +5,7 @@ import { debugWarn } from '@element-plus/utils'
 import type { ComputedRef } from 'vue'
 
 interface Params {
-  excludeListeners?: boolean
+  excludeListeners?: boolean // 排除监听属性 /^on[A-z]/
   excludeKeys?: ComputedRef<string[]>
 }
 
@@ -28,6 +28,8 @@ export const useAttrs = (
     )
     return computed(() => ({}))
   }
+
+  console.log(instance.proxy)
 
   return computed(() =>
     fromPairs(

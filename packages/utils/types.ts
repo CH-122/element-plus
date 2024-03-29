@@ -26,10 +26,12 @@ export const isElement = (e: unknown): e is Element => {
   return e instanceof Element
 }
 
+// 是否没有 prop
 export const isPropAbsent = (prop: unknown): prop is null | undefined => {
   return isNil(prop)
 }
 
+// 是否是字符串类型的数字
 export const isStringNumber = (val: string): boolean => {
   if (!isString(val)) {
     return false

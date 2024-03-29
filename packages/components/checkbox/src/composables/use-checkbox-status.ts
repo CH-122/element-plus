@@ -48,6 +48,7 @@ export const useCheckboxStatus = (
   )
   const checkboxSize = useFormSize(computed(() => checkboxGroup?.size?.value))
 
+  /* 默认插槽或者 actualValue（value / label） 是否为空  */
   const hasOwnLabel = computed<boolean>(() => {
     return !!slots.default || !isPropAbsent(actualValue.value)
   })

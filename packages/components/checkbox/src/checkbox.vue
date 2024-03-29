@@ -41,6 +41,7 @@
       />
       <span :class="ns.e('inner')" />
     </span>
+    <!-- 有默认插槽 || value || label -->
     <span v-if="hasOwnLabel" :class="ns.e('label')">
       <slot />
       <template v-if="!$slots.default">{{ label }}</template>

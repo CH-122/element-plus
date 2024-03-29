@@ -657,6 +657,9 @@ importers:
       '@vitejs/plugin-vue':
         specifier: ^2.3.3
         version: 2.3.3(vite@2.9.15)(vue@3.2.37)
+      unocss:
+        specifier: 0.33.5
+        version: 0.33.5(vite@2.9.15)
       unplugin-vue-components:
         specifier: 0.21.2
         version: 0.21.2(vite@2.9.15)(vue@3.2.37)
@@ -3696,7 +3699,7 @@ packages:
       '@unocss/inspector': 0.33.5
       '@unocss/scope': 0.33.5
       '@unocss/transformer-directives': 0.33.5
-      magic-string: 0.26.2
+      magic-string: 0.26.3
       vite: 2.9.15(sass@1.53.0)
     dev: true
 
@@ -12336,6 +12339,7 @@ packages:
 
   /workbox-google-analytics@6.5.3:
     resolution: {integrity: sha512-3GLCHotz5umoRSb4aNQeTbILETcrTVEozSfLhHSBaegHs1PnqCmN0zbIy2TjTpph2AGXiNwDrWGF0AN+UgDNTw==}
+    deprecated: It is not compatible with newer versions of GA starting with v4, as long as you are using GAv3 it should be ok, but the package is not longer being maintained
     dependencies:
       workbox-background-sync: 6.5.3
       workbox-core: 6.5.3

@@ -9,6 +9,7 @@ import mkcert from 'vite-plugin-mkcert'
 import glob from 'fast-glob'
 import VueMacros from 'unplugin-vue-macros/vite'
 import esbuild from 'rollup-plugin-esbuild'
+import Unocss from 'unocss/vite'
 import {
   epPackage,
   epRoot,
@@ -80,6 +81,7 @@ export default defineConfig(async ({ mode }) => {
       }),
       mkcert(),
       Inspect(),
+      Unocss(),
     ],
 
     optimizeDeps: {

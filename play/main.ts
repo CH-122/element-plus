@@ -1,6 +1,6 @@
 import { createApp } from 'vue'
 import '@element-plus/theme-chalk/src/dark/css-vars.scss'
-import 'uno.css'
+import 'virtual:uno.css'
 import '@element-plus/theme-chalk/src/notification.scss'
 import '@element-plus/theme-chalk/src/message-box.scss'
 import '@element-plus/theme-chalk/src/message.scss'

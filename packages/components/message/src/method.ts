@@ -45,6 +45,8 @@ const normalizeOptions = (params?: MessageParams) => {
   } else if (isString(normalized.appendTo)) {
     let appendTo = document.querySelector<HTMLElement>(normalized.appendTo)
 
+    console.log('appendTo', appendTo)
+
     // should fallback to default value with a warning
     if (!isElement(appendTo)) {
       debugWarn(

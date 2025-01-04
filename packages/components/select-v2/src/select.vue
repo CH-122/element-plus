@@ -238,7 +238,7 @@
         <el-select-menu
           ref="menuRef"
           :data="filteredOptions"
-          :width="popperSize"
+          :width="customPopperSize || popperSize"
           :hovering-index="states.hoveringIndex"
           :scrollbar-always-on="scrollbarAlwaysOn"
         >
@@ -274,6 +274,7 @@
 </template>
 
 <script lang="ts">
+//@ts-nocheck
 import { computed, defineComponent, provide, reactive, toRefs } from 'vue'
 import { isArray } from '@element-plus/utils'
 import { ClickOutside } from '@element-plus/directives'

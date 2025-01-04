@@ -248,6 +248,10 @@ export const SelectProps = buildProps({
    * @description tag type
    */
   tagType: { ...tagProps.type, default: 'info' },
+  customPopperSize: {
+    type: Number,
+    default: 0,
+  },
   /**
    * @description tag effect
    */
